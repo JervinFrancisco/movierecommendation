@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+    <main>
+        <header class="mid">
+            <h1> Jervin's Movie Database</h1>
+			<img id="back-button" data-src="./img/caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" title="Back"/>
+            <img id="search-button" class="iconic iconic-md" data-src="./img/magnifying-glass.svg" alt="Search" title="Search"/>
+            <input type="text" id="search-input" placeholder="search" />
+        </header>
+        
+        <div class="page" id="search-results">
+           <h1>Search Results</h1>
+            <section class="title"></section>
+            <section class="content"></section>
+        </div>
+        
+        <div class="page" id="recommend-results">
+            <section class="title"></section>
+            <section class="content"></section>
+        </div>
+    </main>
+    
+    <div class="loading not">
+        <img class="iconic" data-src="./img/loop-circular.svg" title="loop circular"/>
+    </div>
+    
+    <div class="attribution">
+        <img src="./img/powered-by-square-blue.svg" alt="The Movie DB" />
+    </div>
+    
+    <script src="./js/iconic.min.js"></script>
+    <script src="./js/key.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

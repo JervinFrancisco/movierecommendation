@@ -1,0 +1,86 @@
+
+/* Main*/
+* {
+	padding: 4;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+    
+}
+html{
+    font-size: 20px;  /* 1rem will equal this now */
+    line-height: 1.6;
+    font-family: sans-serif; /* add google fonts */
+    border: solid red;
+} 
+/*Pages*/
+.page{
+	display: none;
+	width: 100%;
+	min-height: 100%; /* allow for content off the bottom of the page */
+	position: absolute;  /* or absolute if the user needs to scroll for more content */
+	padding: 1rem 2rem;
+    margin: 30px auto 0 auto;
+}
+.active{
+    display: block; 
+}
+/*Nav*/
+header {
+    background-color: darkgray;
+    color: azure;
+    margin: auto;
+    text-align: center;
+}
+#back-button{
+	margin-top: -9px;
+	margin-right: -9px;
+	margin-left: -9px;
+	margin-bottom: -9px;
+}
+
+#search-button{
+  position:absolute;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  display: inline;
+}
+
+#search-input{
+    width: 230px;
+    box-sizing: border-box;
+    border: 2px #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    
+}
+
+#search-input:focus {
+    width: 50%;
+}
+
+#search-results{
+    background-color: hsl(60, 50%, 80%);
+}
+#recommend-results{
+    background-color: hsl(180, 50%, 80%);
+}
+.attribution{
+	width: 20%;
+	margin: auto;
+    position:fixed;
+    bottom:0px;
+    left:40%;
+}
+.loading{
+	display:none;
+}
