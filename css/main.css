@@ -1,86 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Crimson+Text');
 
 /* Main*/
+
 * {
-	padding: 4;
-	margin-top: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	box-sizing: border-box;
+    font-family: 'Crimson Text', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+html {
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #d6ccc2;
+}
+
+
+/*Pages*/
+
+#back {
+    background-color: #b94674;
+    border: none;
+    color: white;
+    padding: 7px 7px;
+    font-size: 20px;
+    margin-left: -74%;
+    font-family: 'Amatic SC', sans-serif;
     
 }
-html{
-    font-size: 20px;  /* 1rem will equal this now */
-    line-height: 1.6;
-    font-family: sans-serif; /* add google fonts */
-    border: solid red;
+#bal{
+    width:15%;
+    margin-top:3%;
+    margin-left: 58.8%;
+}
+
+#search {
+    background-color: #b94674;
+    border: none;
+    color: white;
+    padding: 7px 7px;
+    font-size: 20px;
+    margin-left: -74%;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 0;
+    cursor: pointer;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+#getId {
+    text-indent: -9999px;
+    line-height: 0;
+    display: block;
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #ff5050;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+#getId:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#getId::after {
+    content: "Click For Recommendations";
+    text-indent: 0;
+    display: inherit;
+    line-height: initial;
+    /* New content takes up original line height */
+}
+
+#clear {
+    text-indent: -9999px;
+    line-height: 0;
+    display: block;
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #ff5050;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+#clear:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#clear::after {
+    content: "Go back for a new search";
+    text-indent: 0;
+    display: inherit;
+    line-height: initial;
+    /* New content takes up original line height */
+}
+
+img {
+    float: left;
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+h1 {
+  
+    font-size: 1.5rem;
+    
+   
+}
+h2{
+    font-size: 1.5rem;
+    
+}
+h4{
+    text-align: left ;
+    color: #ffcc99;
+    font-size: 60px;
+    padding-right: 25px;
+    text-shadow: 2px 2px black;
+    background-color:#b94674;
+    border: 30% black;
+    font-family: 'Amatic SC', sans-serif;
 } 
-/*Pages*/
-.page{
-	display: none;
-	width: 100%;
-	min-height: 100%; /* allow for content off the bottom of the page */
-	position: absolute;  /* or absolute if the user needs to scroll for more content */
-	padding: 1rem 2rem;
-    margin: 30px auto 0 auto;
-}
-.active{
-    display: block; 
-}
+
+
 /*Nav*/
+
 header {
-    background-color: darkgray;
+    width: 900px;
+    height: 180px;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    background-color: #cccccc;
     color: azure;
     margin: auto;
+    border: solid #3d3d5c 2px;
+    border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+div {
+    max-width: 800px;
+    padding: 2rem;
+    border: 1px solid #666;
+    overflow: auto;
+    clear: both;
+    margin-top: 5%;
+    -webkit- transition: width 3s;
+}
+
+div:hover {
+    box-shadow: 5px 5px #888888;
+}
+
+p {
+    font-size: 0.8rem;
+    color: black;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #191919), color-stop(10, #DFE2DB), color-stop(25, #BADA55), color-stop(37, #90BCEA), color-stop(50, #90BFF0), color-stop(51, #6BA8E5), color-stop(83, #A2DAF5), color-stop(100, #bdf3fd));
+    color: white;
     text-align: center;
-}
-#back-button{
-	margin-top: -9px;
-	margin-right: -9px;
-	margin-left: -9px;
-	margin-bottom: -9px;
+    font-size: 15px;
 }
 
-#search-button{
-  position:absolute;
-  margin-left: 17px;
-  margin-top: 17px;
-  z-index: 1;
-  display: inline;
+#recommend-results p{
+    font-size: 0.8rem;
+    color: black;
+    font-style:normal;
 }
 
-#search-input{
-    width: 230px;
+#search-input {
+    width: 160px;
     box-sizing: border-box;
-    border: 2px #ccc;
+    border: 30px #0080ff;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 25px;
     background-color: white;
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: auto 20px 22px 40px;
     -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    
+    transition: width 0.8s ease-in-out;
+    text-align: center;
+    margin-top: 3.5%;
 }
 
 #search-input:focus {
-    width: 50%;
+    width: 47%;
 }
 
-#search-results{
-    background-color: hsl(60, 50%, 80%);
+#search-results {
+    background-color: #e0e0eb;
+    max-width: 900px;
+    max-height: 600px;
+    padding: 4rem;
+    border: 4px solid #666;
+    overflow: auto;
+    clear: both;
+    position: fixed;
+    box-shadow: 5px 10px #888888;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
 }
-#recommend-results{
-    background-color: hsl(180, 50%, 80%);
+
+.page {
+    display: none;
+    margin-top: 3rem;
+    padding: 1rem;
 }
-.attribution{
-	width: 20%;
-	margin: auto;
-    position:fixed;
-    bottom:0px;
-    left:40%;
+
+.page.active {
+    display: block;
 }
-.loading{
-	display:none;
+
+#recommend-results {
+    background-color:#e0e0eb;
+    max-width: 900px;
+    max-height: 600px;
+    padding: 4rem;
+    border: 4px solid #666;
+     box-shadow: 5px 10px #888888;
+    overflow: auto;
+    clear: both;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+}
+
+#attribution {
+    width: 22%;
+    margin: auto;
+    position: right;
+    margin-top: .6%
+}
+
+
+
+.loading {
+    display: none;
 }

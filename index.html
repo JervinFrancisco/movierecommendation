@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Movie Recommendations</title>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
+
+    <!--    <p><img src="https://image.tmdb.org/t/p/w185/l1yltvzILaZcx2jYvc5sEMkM7Eh.jpg" alt="Jaws"/></p>-->
     <main>
         <header class="mid">
-            <h1> Jervin's Movie Database</h1>
-			<img id="back-button" data-src="./img/caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" title="Back"/>
-            <img id="search-button" class="iconic iconic-md" data-src="./img/magnifying-glass.svg" alt="Search" title="Search"/>
-            <input type="text" id="search-input" placeholder="search" />
+
+            <h4>Movie Database Website</h4>
+            <img src="./img/powered-by-rectangle-blue.svg" id="attribution" alt="The Movie DB" />
+
+            <button id="back">Back</button>
+
+            <input type="text" id="search-input" placeholder="search a movie" />
+
+            <button id="search">Search</button>
+            <a href="https://github.com/fran0436/movierecommendation">
+                <img src="./img/balrog-punch-lunge.gif" id="bal" alt="my github repo" />
+            </a>
         </header>
         
         <div class="page" id="search-results">
-           <h1>Search Results</h1>
+            <h1>Search Results</h1>
             <section class="title"></section>
             <section class="content"></section>
         </div>
-        
+
         <div class="page" id="recommend-results">
+            <h4>Recommended Results</h4>
             <section class="title"></section>
             <section class="content"></section>
+
         </div>
+
     </main>
-    
-    <div class="loading not">
-        <img class="iconic" data-src="./img/loop-circular.svg" title="loop circular"/>
-    </div>
-    
-    <div class="attribution">
-        <img src="./img/powered-by-square-blue.svg" alt="The Movie DB" />
-    </div>
-    
-    <script src="./js/iconic.min.js"></script>
-    <script src="./js/key.js"></script>
-    <script src="./js/main.js"></script>
+    <footer>Jervin "Jervy Jerv" Francisco</footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/key.js"></script>
 </body>
+
 </html>
