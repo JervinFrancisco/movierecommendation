@@ -24,7 +24,7 @@ function init() {
     };
 
     let getConfig = function () {
-        let url3 = "".concat(baseURL, 'movie/', 3, '?api_key=', APIKEY);
+        let url3 = "".concat(baseURL, 'movie/', '11', '?api_key=', APIKEY);
         fetch(url)
             .then((result) => {
                 return result.json();
