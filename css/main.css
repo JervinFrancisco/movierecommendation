@@ -28,6 +28,7 @@ html {
     font-size: 20px;
     margin-left: -74%;
     font-family: 'Amatic SC', sans-serif;
+    cursor: pointer;
     
 }
 #bal{
@@ -237,7 +238,22 @@ footer {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 2%;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 }
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .page {
     display: none;
@@ -261,6 +277,12 @@ footer {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 2%;
+   opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+
 }
 
 #attribution {
