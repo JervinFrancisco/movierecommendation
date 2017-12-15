@@ -27,9 +27,14 @@ html {
     padding: 7px 7px;
     font-size: 20px;
     margin-left: -74%;
+    margin-top: 2%;
     font-family: 'Amatic SC', sans-serif;
     cursor: pointer;
-    
+   
+}
+
+#back:hover{
+   box-shadow: 5px 15px 20px rgba(46, 229, 157, 0.4) ;
 }
 #bal{
     width:15%;
@@ -50,13 +55,17 @@ html {
     cursor: pointer;
     font-family: 'Amatic SC', sans-serif;
 }
-
+#search:hover{
+   box-shadow: 5px 15px 20px rgba(46, 229, 157, 0.4) ;
+}
 #getId {
     text-indent: -9999px;
     line-height: 0;
     display: block;
     width: 140px;
     height: 45px;
+    margin-top: 2%;
+    margin-left: 40%;
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     text-transform: uppercase;
@@ -125,11 +134,13 @@ html {
 img {
     float: left;
     margin: 0 0.5rem 0.5rem 0;
+    z-index: 1;
 }
 
 h1 {
   
     font-size: 1.5rem;
+    padding-left: 5%;
     
    
 }
@@ -186,6 +197,7 @@ div:hover {
 p {
     font-size: 0.8rem;
     color: black;
+    margin-left:35%;
 }
 
 footer {
@@ -243,6 +255,7 @@ footer {
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 1s;
+    padding-top: 5%;
 }
 
 @keyframes fadeInOpacity {

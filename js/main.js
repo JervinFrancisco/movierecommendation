@@ -70,9 +70,9 @@ function init() {
                     al = document.getElementById('search-results').classList.add('page');
                 }
                 let str = JSON.stringify(data, null, '\t');
-
                 console.log(str);
                 let sec = document.getElementById('search-results');
+         sec.value = "word";
                 for (var i = 0, num = str.length; i < num; i++) {
                     let titles = data.results[i].title;
 
@@ -95,9 +95,9 @@ function init() {
                     h3.innerHTML = ''.concat('Movie Title:', '\xa0', titles, '</br>');
                     p.innerHTML = ''.concat('Overview:', '</br>', overview);
                     but.innerHTML = movieId;
+                    div.appendChild(img);
                     div.appendChild(h3);
                     div.appendChild(p);
-                    div.appendChild(img);
                     div.appendChild(but);
                     sec = document.querySelector('.content').appendChild(div);
                     document.getElementById('search-results').classList.remove('page');
@@ -134,6 +134,9 @@ function init() {
                 let str1 = JSON.stringify(data, null, '\t');
                 //            console.log(str1) ;
                 let sec1 = document.getElementById('recommend-results');
+                let h8 = document.createElement('h1');
+            h8.innerHTML = "Recommended Movies:";
+           sec1.appendChild(h8);
                 for (var i = 0, num = str1.length; i < num; i++) {
                     let title2 = data.results[i].title;
                     console.log(title2);
@@ -154,9 +157,9 @@ function init() {
                     img2.src = ''.concat(baseImageURL2, image2);
                     h4.innerHTML = ''.concat('Movie Title:', '\xa0', title2, '</br>');
                     p2.innerHTML = ''.concat('Overview:', '</br>', overview2);
+                    div.appendChild(img2);
                     div.appendChild(h4);
                     div.appendChild(p2);
-                    div.appendChild(img2);
                     div.appendChild(but2);
 
                     sec1.appendChild(div);
