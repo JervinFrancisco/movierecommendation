@@ -209,6 +209,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 15px;
+  
 }
 
 #recommend-results p{
@@ -256,6 +257,7 @@ footer {
     animation-timing-function: ease-in;
     animation-duration: 1s;
     padding-top: 5%;
+    padding-bottom: 3%;
 }
 
 @keyframes fadeInOpacity {
@@ -295,6 +297,7 @@ footer {
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 1s;
+    padding-bottom: 3%;
 
 }
 
