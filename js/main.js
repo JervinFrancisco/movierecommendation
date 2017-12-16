@@ -72,10 +72,12 @@ function init() {
                 let str = JSON.stringify(data, null, '\t');
                 console.log(str);
                 let sec = document.getElementById('search-results');
-         sec.value = "word";
+                let h8 = document.createElement('h3');
+                h8 = document.querySelector('.res')
                 for (var i = 0, num = str.length; i < num; i++) {
-                    let titles = data.results[i].title;
 
+                    let titles = data.results[i].title;
+                    h8.innerHTML = ''.concat('Search results based on your search:', '\xa0', key, '\xa0', '</br>', 'This is the amount of movies came up:', '\xa0', data.results.length);
                     console.log(titles);
                     let overview = data.results[i].overview;
                     //                console.log(overview);
@@ -134,9 +136,6 @@ function init() {
                 let str1 = JSON.stringify(data, null, '\t');
                 //            console.log(str1) ;
                 let sec1 = document.getElementById('recommend-results');
-                let h8 = document.createElement('h1');
-            h8.innerHTML = "Recommended Movies:";
-           sec1.appendChild(h8);
                 for (var i = 0, num = str1.length; i < num; i++) {
                     let title2 = data.results[i].title;
                     console.log(title2);
@@ -147,12 +146,12 @@ function init() {
                     console.log(image2);
                     let div = document.createElement('div');
                     let h4 = document.createElement('h1');
-                    let h5  = document.createElement('h1');
+                    let h5 = document.createElement('h1');
                     h5.setAttribute("id", "title");
                     let p2 = document.createElement('p');
                     let img2 = document.createElement('img');
                     let but2 = document.createElement('button');
-                   
+
                     but2.setAttribute("id", "clear");
                     img2.src = ''.concat(baseImageURL2, image2);
                     h4.innerHTML = ''.concat('Movie Title:', '\xa0', title2, '</br>');
@@ -192,7 +191,10 @@ function init() {
         let clr = document.getElementById('recommend-results').classList.add('page');
         document.getElementById('recommend-results').innerHTML = '';
         document.getElementById('search-results').classList.remove('page');
+        document.getElementById('search-results').classList.add('page');
+        document.getElementById('search-results').classList.remove('page');
         document.body.scrollTop = document.documentElement.scrollTop = 0;
+
     }
 }
 document.addEventListener('DOMContentLoaded', init);
