@@ -297,6 +297,9 @@ footer {
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 1s;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
     padding-bottom: 3%;
 }
 
