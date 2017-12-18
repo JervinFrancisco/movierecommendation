@@ -85,9 +85,13 @@ function init() {
                     //                console.log(image);
                     let movieId = data.results[i].id;
                     //                console.log(movieId);
-
+                    let release = data.results[i].release_date;
+                    let vote = data.results[i].vote_average;
+                    
                     let div = document.createElement('div');
                     let h3 = document.createElement('h1');
+                    let h5 = document.createElement('h5');
+                    h5.innerHTML = ''.concat('Release Date:', '\xa0', release, '</br>', 'Vote Average:', '\xa0', vote );
                     let p = document.createElement('p');
                     let but = document.createElement('button');
                     but.setAttribute("id", "getId");
@@ -99,6 +103,7 @@ function init() {
                     but.innerHTML = movieId;
                     div.appendChild(img);
                     div.appendChild(h3);
+                    div.appendChild(h5);
                     div.appendChild(p);
                     div.appendChild(but);
                     sec = document.querySelector('.content').appendChild(div);
@@ -144,6 +149,10 @@ function init() {
                     //                console.log(overview2);
                     let image2 = data.results[i].poster_path;
                     console.log(image2);
+                    let vote = data.results[i].vote_average;
+                    let release = data.results[i].release_date;
+                    let h6 = document.createElement('h5');
+                    h6.innerHTML = ''.concat('Release Date:', '\xa0', release, '</br>', 'Vote Average:', '\xa0', vote );
                     let div = document.createElement('div');
                     let h4 = document.createElement('h1');
                     let h5 = document.createElement('h1');
@@ -158,6 +167,7 @@ function init() {
                     p2.innerHTML = ''.concat('Overview:', '</br>', overview2);
                     div.appendChild(img2);
                     div.appendChild(h4);
+                    div.appendChild(h6);
                     div.appendChild(p2);
                     div.appendChild(but2);
 
