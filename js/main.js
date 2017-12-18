@@ -182,7 +182,7 @@ function init() {
         document.getElementById('search-results').classList.remove('page');
         clr = document.getElementById('search-results').classList.add('page');
         clr = document.getElementById('recommend-results').classList.add('page');
-        alert('get new search');
+      
 
 
     }
