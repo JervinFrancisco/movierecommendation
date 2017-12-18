@@ -87,15 +87,16 @@ function init() {
                     //                console.log(movieId);
                     let release = data.results[i].release_date;
                     let vote = data.results[i].vote_average;
-                    
+
                     let div = document.createElement('div');
                     let h3 = document.createElement('h1');
                     let h5 = document.createElement('h5');
-                    h5.innerHTML = ''.concat('Release Date:', '\xa0', release, '</br>', 'Vote Average:', '\xa0', vote );
+                    h5.innerHTML = ''.concat('Release Date:', '\xa0', release, '</br>', 'Vote Average:', '\xa0', vote);
                     let p = document.createElement('p');
                     let but = document.createElement('button');
                     but.setAttribute("id", "getId");
                     let img = document.createElement('img');
+                    img.alt = titles;
                     img.src = ''.concat(baseImageURL, image);
                     //              console.log(img);
                     h3.innerHTML = ''.concat('Movie Title:', '\xa0', titles, '</br>');
@@ -152,7 +153,7 @@ function init() {
                     let vote = data.results[i].vote_average;
                     let release = data.results[i].release_date;
                     let h6 = document.createElement('h5');
-                    h6.innerHTML = ''.concat('Release Date:', '\xa0', release, '</br>', 'Vote Average:', '\xa0', vote );
+                    h6.innerHTML = ''.concat('Release Date:', '\xa0', release, '</br>', 'Vote Average:', '\xa0', vote);
                     let div = document.createElement('div');
                     let h4 = document.createElement('h1');
                     let h5 = document.createElement('h1');
@@ -163,6 +164,7 @@ function init() {
 
                     but2.setAttribute("id", "clear");
                     img2.src = ''.concat(baseImageURL2, image2);
+                    img2.alt = title2;
                     h4.innerHTML = ''.concat('Movie Title:', '\xa0', title2, '</br>');
                     p2.innerHTML = ''.concat('Overview:', '</br>', overview2);
                     div.appendChild(img2);
@@ -192,7 +194,7 @@ function init() {
         document.getElementById('search-results').classList.remove('page');
         clr = document.getElementById('search-results').classList.add('page');
         clr = document.getElementById('recommend-results').classList.add('page');
-      
+
 
 
     }
