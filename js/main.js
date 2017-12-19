@@ -24,8 +24,8 @@ function init() {
     };
 
     let getConfig = function () {
-        let url3 = "".concat(baseURL, 'movie/', '11', '?api_key=', APIKEY);
-        fetch(url)
+        let url2 = "".concat(baseURL, 'movie/', keyword, '?api_key=', APIKEY);
+        fetch(url2)
             .then((result) => {
                 return result.json();
             })
@@ -70,7 +70,7 @@ function init() {
                     al = document.getElementById('search-results').classList.add('page');
                 }
                 let str = JSON.stringify(data, null, '\t');
-                console.log(str);
+//                console.log(str);
                 let sec = document.getElementById('search-results');
                 let h8 = document.createElement('h3');
                 h8 = document.querySelector('.res')
